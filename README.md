@@ -17,4 +17,3 @@ RDMS, a management system for Robot chat data, using Python Flask
 
 # Todo List
 - add Bootstrap templates
-- add another one
