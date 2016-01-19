@@ -20,7 +20,17 @@
 {% endblock %}
 
 {% block content %}
-  <h1>Hello, Bootstrap</h1>
+  <!-- <h1>Hello, Bootstrap</h1> -->
+
+  <!-- following is flash message inflate snippet, can present anywhere -->
+  {% block flash_msg %}
+  {% endblock %}
+
+  <!-- following is the default main snippet, must be inherited -->
+  {% block main_snippet %}<p>
+  </p>{% endblock %}
+    This is Default Main Snippet, must be inherited
+
 {% endblock %}
 
 {% block scripts %}
