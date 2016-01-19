@@ -4,8 +4,9 @@
 
 {% block styles %}
 {{ super() }}
-<link rel="icon" type="image/ico" sizes="16x16" href="/static/img/favicon.ico">
+<link rel="icon" type="image/ico" sizes="16x16" href="{{ url_for('.static', filename='img/favicon.ico') }}">
 
+<!-- <link rel="stylesheet" href="{{url_for('.static', filename='mystyle.css')}}"> -->
 <!-- Latest compiled and minified CSS -->
 <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"> -->
 
