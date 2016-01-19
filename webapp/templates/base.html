@@ -3,12 +3,36 @@
 {% block title %}This is an base bootstrap page{% endblock %}
 
 {% block styles %}
+
+<!-- super blocks -->
 {{ super() }}
+
 <!-- load favicon -->
 <link rel="icon" type="image/ico" sizes="16x16" href="{{ url_for('.static', filename='img/favicon.ico') }}">
 
 <!-- MetisMenu CSS -->
 <link rel="stylesheet" href="{{ url_for('.static', filename='css/metisMenu.min.css') }}">
+
+<!-- Timeline CSS -->
+<link rel="stylesheet" href="{{ url_for('.static', filename='css/timeline.css') }}">
+
+<!-- Custom CSS -->
+<link rel="stylesheet" href="{{ url_for('.static', filename='css/sb-admin-2.css') }}">
+
+<!-- Morris Charts CSS -->
+<link rel="stylesheet" href="{{ url_for('.static', filename='css/morris.css') }}">
+
+<!-- Custom Fonts -->
+<link rel="stylesheet" href="{{ url_for('.static', filename='css/font-awesome.min.css') }}" type="text/css">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
 
 <!-- <link rel="stylesheet" href="{{url_for('.static', filename='mystyle.css')}}"> -->
 <!-- Latest compiled and minified CSS -->
@@ -16,13 +40,16 @@
 
 <!-- Optional theme -->
 <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous"> -->
+
 {% endblock %}
+
 
 {% block navbar %}
 <div class="navbar navbar-fixed-top">
   <!-- ... -->
 </div>
 {% endblock %}
+
 
 {% block content %}
   <!-- <h1>Hello, Bootstrap</h1> -->
@@ -38,7 +65,24 @@
 
 {% endblock %}
 
+
 {% block scripts %}
-<script src="{{url_for('.static', filename='js/myscripts.js')}}"></script>
+<script src="{{ url_for('.static', filename='js/myscripts.js') }}"></script>
+
+<!-- jQuery -->
+<script src="{{ url_for('.static', filename='js/jquery.min.js') }}"></script>
+
+<!-- Metis Menu Plugin JavaScript -->
+<script src="{{ url_for('.static', filename='js/metisMenu.min.js') }}"></script>
+
+<!-- Morris Charts JavaScript -->
+<script src="{{ url_for('.static', filename='js/raphael-min.js') }}"></script>
+<script src="{{ url_for('.static', filename='js/morris.min.js') }}"></script>
+<!-- <script src="{{ url_for('.static', filename='js/morris-data.js') }}"></script> -->
+
+<!-- Custom Theme JavaScript -->
+<script src="{{ url_for('.static', filename='js/sb-admin-2.js') }}"></script>
+
+<!-- super blocks -->
 {{ super() }}
 {% endblock %}
