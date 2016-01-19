@@ -16,3 +16,7 @@ def index():
 @app.route('/rdms/test')
 def test():
     return 'test'
+
+@app.route('/rdms')
+def base():
+    return render_template('test.html')
